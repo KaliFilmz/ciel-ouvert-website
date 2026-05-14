@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 680" role="img" aria-label="Ciel ouvert — Média Associatif">
+  <title>Ciel ouvert — Média Associatif (version claire)</title>
+  <defs>
+    <clipPath id="ciel-logo-light-clip">
+      <circle cx="128" cy="128" r="113"></circle>
+    </clipPath>
+  </defs>
+
+  
+  <g transform="translate(150 30) scale(1.171875)">
+    <g clip-path="url(#ciel-logo-light-clip)">
+      <rect x="0" y="0" width="256" height="146" fill="#A9CFEF"></rect>
+      <rect x="0" y="146" width="256" height="110" fill="#EBF4FF"></rect>
+      <line x1="0" y1="146" x2="256" y2="146" stroke="#378ADD" stroke-width="2"></line>
+      <path d="M 92 146 A 36 36 0 0 1 164 146 Z" fill="#F5A623"></path>
+      <g stroke="#F5A623" stroke-width="3.2" stroke-linecap="round" fill="none">
+        <line x1="128" y1="104" x2="128" y2="86"></line>
+        <line x1="143" y1="107" x2="150" y2="89"></line>
+        <line x1="113" y1="107" x2="106" y2="89"></line>
+        <line x1="158" y1="116" x2="170" y2="104"></line>
+        <line x1="98" y1="116" x2="86" y2="104"></line>
+        <line x1="167" y1="131" x2="184" y2="124"></line>
+        <line x1="89" y1="131" x2="72" y2="124"></line>
+      </g>
+      <g fill="none" stroke="#0C447C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 108 72 q 6 -7 11 0 q 5 -7 11 0"></path>
+        <path d="M 138 76 q 6 -7 11 0 q 5 -7 11 0"></path>
+      </g>
+    </g>
+    <circle cx="128" cy="128" r="115" fill="none" stroke="#378ADD" stroke-width="3"></circle>
+  </g>
+
+  
+  <text x="300" y="460" text-anchor="middle" font-family="Lora, &#39;Playfair Display&#39;, Georgia, serif" font-size="92" font-weight="600" fill="#0C447C">Ciel ouvert</text>
+
+  
+  <text x="300" y="510" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="7" fill="#378ADD">MÉDIA ASSOCIATIF</text>
+</svg>
