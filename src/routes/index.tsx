@@ -32,8 +32,15 @@ function HomePage() {
             {/* Overlay blanc léger pour lisibilité du texte navy */}
             <div className="absolute inset-0 bg-white/60" />
           </div>
-          {/* pt-44 = espace pour le logo navbar qui déborde (h-64 - h-20 = 176px) */}
-          <div className="mx-auto max-w-6xl px-6 pt-44 pb-24 md:pt-48 md:pb-36">
+          <div className="mx-auto max-w-6xl px-6 pt-8 pb-24 md:pt-12 md:pb-36">
+            {/* Logo complet — centré, très grand */}
+            <div className="mb-8 flex justify-center">
+              <img
+                src="/logo-transparent.png"
+                alt="Ciel ouvert — Média associatif"
+                className="w-[90vw] max-w-[700px] md:max-w-[1000px]"
+              />
+            </div>
             <div className="text-center">
               <h1 className="font-serif text-5xl font-semibold leading-[1.05] text-bleu-nuit md:text-7xl">
                 Le ciel s’ouvre <br />

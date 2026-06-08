@@ -13,18 +13,17 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 overflow-visible">
-      {/* Barre fine — le logo déborde en dessous */}
+    <header className="sticky top-0 z-50">
       <div className="border-b border-border/60 bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 overflow-visible">
+        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
 
-          {/* Logo — ancré en haut, déborde vers le bas */}
-          <Link to="/" className="self-start flex items-start group" onClick={() => setOpen(false)}>
-            <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-64 w-auto" />
+          {/* Symbole — aussi grand que la barre le permet */}
+          <Link to="/" className="flex items-center group" onClick={() => setOpen(false)}>
+            <img src="/logo-symbol.png" alt="Ciel ouvert" className="h-[72px] w-auto" />
           </Link>
 
-          {/* Navigation desktop — centrée dans les 80px de la barre */}
-          <nav className="hidden md:flex items-center gap-8 self-center">
+          {/* Navigation desktop */}
+          <nav className="hidden md:flex items-center gap-8">
             {nav.map((n) => (
               <Link
                 key={n.to}
