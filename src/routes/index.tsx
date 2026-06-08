@@ -32,9 +32,9 @@ function HomePage() {
             {/* Overlay blanc léger pour lisibilité du texte navy */}
             <div className="absolute inset-0 bg-white/60" />
           </div>
-          <div className="mx-auto max-w-6xl px-6 pt-8 pb-24 md:pt-12 md:pb-36">
-            {/* Logo complet — centré, très grand */}
-            <div className="mb-8 flex justify-center">
+          <div className="mx-auto max-w-6xl px-6 pt-2 pb-24 md:pt-3 md:pb-36">
+            {/* Logo complet — centré, très grand, collé sous la navbar */}
+            <div className="mb-3 flex justify-center">
               <img
                 src="/logo-transparent.png"
                 alt="Ciel ouvert — Média associatif"
