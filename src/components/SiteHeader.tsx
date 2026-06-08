@@ -16,7 +16,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
         <Link to="/" className="flex items-center group" onClick={() => setOpen(false)}>
-          <img src="/logo-symbol.png" alt="Ciel ouvert" className="h-14 w-auto" />
+          <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-16 w-auto" />
         </Link>
 
         {/* Navigation desktop */}

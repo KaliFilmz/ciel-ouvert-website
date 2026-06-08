@@ -21,13 +21,13 @@ function HomePage() {
       <main className="flex-1">
         {/* HERO — fond clair pour que le logo navy soit visible */}
         <section className="bg-gradient-to-b from-ciel-pale via-white to-background">
-          <div className="mx-auto max-w-6xl px-6 pt-6 pb-24 md:pt-8 md:pb-36">
-            {/* Logo transparent — très grand, collé sous la navbar */}
-            <div className="mb-5 flex justify-center">
+          <div className="mx-auto max-w-6xl px-6 pt-2 pb-24 md:pt-2 md:pb-36">
+            {/* Symbole — très grand, collé sous la navbar */}
+            <div className="mb-3 flex justify-center">
               <img
-                src="/logo-transparent.png"
-                alt="Ciel ouvert — Média associatif"
-                className="w-[88vw] max-w-[640px] md:max-w-[820px]"
+                src="/logo-symbol.png"
+                alt="Ciel ouvert"
+                className="w-[70vw] max-w-[420px] md:max-w-[560px]"
               />
             </div>
             <div className="text-center">
