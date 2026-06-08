@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { episodes } from "@/lib/episodes";
+import geneveHero from "@/assets/geneve-hero.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -19,8 +20,18 @@ function HomePage() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
       <main className="flex-1">
-        {/* HERO — fond clair pour que le logo navy soit visible */}
-        <section className="bg-gradient-to-b from-ciel-pale via-white to-background">
+        {/* HERO — photo Genève floutée en fond */}
+        <section className="relative overflow-hidden">
+          {/* Image Genève — légèrement floutée */}
+          <div className="absolute inset-0 -z-10">
+            <img
+              src={geneveHero}
+              alt=""
+              className="h-full w-full object-cover scale-105 blur-[3px]"
+            />
+            {/* Overlay blanc léger pour lisibilité du texte navy */}
+            <div className="absolute inset-0 bg-white/60" />
+          </div>
           <div className="mx-auto max-w-6xl px-6 pt-2 pb-24 md:pt-2 md:pb-36">
             {/* Symbole — très grand, collé sous la navbar */}
             <div className="mb-3 flex justify-center">
