@@ -32,41 +32,41 @@ function HomePage() {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-minuit/85 via-bleu-nuit/70 to-background" />
           </div>
-          <div className="mx-auto max-w-6xl px-6 pt-24 pb-32 md:pt-36 md:pb-44">
-            {/* Logo officiel — grand sur fond sombre */}
-            <div className="mb-10">
-              <div className="inline-block overflow-hidden rounded-2xl shadow-2xl shadow-minuit/60">
-                <img
-                  src="/logo-light.png"
-                  alt="Ciel ouvert — Média associatif"
-                  className="block h-28 w-auto md:h-36"
-                />
-              </div>
+          <div className="mx-auto max-w-6xl px-6 pt-20 pb-32 md:pt-28 md:pb-44">
+            {/* Logo transparent — très grand, centré */}
+            <div className="mb-12 flex justify-center">
+              <img
+                src="/logo-transparent.png"
+                alt="Ciel ouvert — Média associatif"
+                className="w-80 max-w-full drop-shadow-2xl md:w-[520px]"
+              />
             </div>
-            <span className="eyebrow text-soleil">Lancement août 2026</span>
-            <h1 className="mt-6 max-w-4xl font-serif text-5xl font-semibold leading-[1.05] text-white md:text-7xl">
-              Le ciel s’ouvre <br />
-              <span className="italic text-ciel-doux">sur Genève.</span>
-            </h1>
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-ciel-doux">
-              Un média associatif numérique qui met en lumière les associations du Canton de
-              Genève — celles qui font vivre la culture, le sport, la solidarité et l’engagement
-              citoyen.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                to="/episodes"
-                className="inline-flex items-center gap-2 rounded-full bg-soleil px-6 py-3 text-sm font-semibold text-minuit hover:opacity-90 transition"
-              >
-                Découvrir les 8 épisodes
-                <span aria-hidden>→</span>
-              </Link>
-              <Link
-                to="/le-media"
-                className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition"
-              >
-                Notre démarche
-              </Link>
+            <div className="text-center">
+              <span className="eyebrow text-soleil">Lancement août 2026</span>
+              <h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.05] text-white md:text-7xl">
+                Le ciel s’ouvre <br />
+                <span className="italic text-ciel-doux">sur Genève.</span>
+              </h1>
+              <p className="mt-8 mx-auto max-w-xl text-lg leading-relaxed text-ciel-doux">
+                Un média associatif numérique qui met en lumière les associations du Canton de
+                Genève — celles qui font vivre la culture, le sport, la solidarité et l’engagement
+                citoyen.
+              </p>
+              <div className="mt-10 flex flex-wrap justify-center gap-4">
+                <Link
+                  to="/episodes"
+                  className="inline-flex items-center gap-2 rounded-full bg-soleil px-6 py-3 text-sm font-semibold text-minuit hover:opacity-90 transition"
+                >
+                  Découvrir les 8 épisodes
+                  <span aria-hidden>→</span>
+                </Link>
+                <Link
+                  to="/le-media"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition"
+                >
+                  Notre démarche
+                </Link>
+              </div>
             </div>
           </div>
         </section>

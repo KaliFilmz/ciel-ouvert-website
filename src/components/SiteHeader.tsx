@@ -11,12 +11,12 @@ const nav = [
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <Link to="/" className="flex items-center gap-2 group">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+        <Link to="/" className="flex items-center group">
           <img
-            src="/logo-light.png"
+            src="/logo-symbol.png"
             alt="Ciel ouvert"
-            className="h-10 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
