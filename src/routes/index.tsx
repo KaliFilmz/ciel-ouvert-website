@@ -29,16 +29,16 @@ function HomePage() {
               alt=""
               className="h-full w-full object-cover scale-105 blur-[3px]"
             />
-            {/* Overlay blanc léger pour lisibilité du texte navy */}
-            <div className="absolute inset-0 bg-white/60" />
+            {/* Overlay sombre — laisse voir la photo, textes en blanc */}
+            <div className="absolute inset-0 bg-minuit/55" />
           </div>
           <div className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-36">
             <div className="text-center">
-              <h1 className="font-serif text-5xl font-semibold leading-[1.05] text-bleu-nuit md:text-7xl">
+              <h1 className="font-serif text-5xl font-semibold leading-[1.05] text-white md:text-7xl">
                 Le ciel s’ouvre <br />
-                <span className="italic text-bleu-vif">sur Genève.</span>
+                <span className="italic text-ciel-doux">sur Genève.</span>
               </h1>
-              <p className="mt-8 mx-auto max-w-xl text-lg leading-relaxed text-foreground/70">
+              <p className="mt-8 mx-auto max-w-xl text-lg leading-relaxed text-white/80">
                 Un média associatif numérique qui met en lumière les associations du Canton de
                 Genève — celles qui font vivre la culture, le sport, la solidarité et l’engagement
                 citoyen.
@@ -46,14 +46,14 @@ function HomePage() {
               <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <Link
                   to="/episodes"
-                  className="inline-flex items-center gap-2 rounded-full bg-bleu-nuit px-6 py-3 text-sm font-semibold text-white hover:opacity-90 transition"
+                  className="inline-flex items-center gap-2 rounded-full bg-soleil px-6 py-3 text-sm font-semibold text-minuit hover:opacity-90 transition"
                 >
                   Découvrir les 8 épisodes
                   <span aria-hidden>→</span>
                 </Link>
                 <Link
                   to="/le-media"
-                  className="inline-flex items-center gap-2 rounded-full border border-bleu-nuit/30 px-6 py-3 text-sm font-medium text-bleu-nuit hover:bg-bleu-nuit/5 transition"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition"
                 >
                   Notre démarche
                 </Link>
