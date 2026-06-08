@@ -18,8 +18,8 @@ export function SiteHeader() {
         <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
 
           {/* Symbole — aussi grand que la barre le permet */}
-          <Link to="/" className="flex items-center group" onClick={() => setOpen(false)}>
-            <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-[72px] w-auto" />
+          <Link to="/" className="flex items-center group overflow-hidden h-[72px]" onClick={() => setOpen(false)}>
+            <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-[144px] w-auto" />
           </Link>
 
           {/* Navigation desktop */}
