@@ -6,7 +6,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
-            <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-14 w-auto" />
+            <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-14 w-auto brightness-0 invert" />
             <p className="mt-4 max-w-sm text-sm text-ciel-doux">
               Média associatif numérique porté par l’association Lumera. Mise en lumière des
               associations du Canton de Genève.
