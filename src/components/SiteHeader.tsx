@@ -13,46 +13,51 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-        <Link to="/" className="flex items-center group" onClick={() => setOpen(false)}>
-          <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-32 w-auto" />
-        </Link>
+    <header className="sticky top-0 z-50 overflow-visible">
+      {/* Barre fine — le logo déborde en dessous */}
+      <div className="border-b border-border/60 bg-background/80 backdrop-blur-md">
+        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 overflow-visible">
 
-        {/* Navigation desktop */}
-        <nav className="hidden md:flex items-center gap-8">
-          {nav.map((n) => (
-            <Link
-              key={n.to}
-              to={n.to}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-              activeProps={{ className: "text-primary" }}
-              activeOptions={{ exact: n.to === "/" }}
-            >
-              {n.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="flex items-center gap-3">
-          <Link
-            to="/episodes"
-            className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition"
-          >
-            Voir les épisodes
-            <span aria-hidden>→</span>
+          {/* Logo — ancré en haut, déborde vers le bas */}
+          <Link to="/" className="self-start flex items-start group" onClick={() => setOpen(false)}>
+            <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-64 w-auto" />
           </Link>
 
-          {/* Bouton hamburger — mobile uniquement */}
-          <button
-            onClick={() => setOpen(!open)}
-            className="md:hidden flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-md hover:bg-muted transition"
-            aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-          >
-            <span className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "translate-y-2 rotate-45" : ""}`} />
-            <span className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "opacity-0" : ""}`} />
-            <span className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "-translate-y-2 -rotate-45" : ""}`} />
-          </button>
+          {/* Navigation desktop — centrée dans les 80px de la barre */}
+          <nav className="hidden md:flex items-center gap-8 self-center">
+            {nav.map((n) => (
+              <Link
+                key={n.to}
+                to={n.to}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                activeProps={{ className: "text-primary" }}
+                activeOptions={{ exact: n.to === "/" }}
+              >
+                {n.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-3 self-center">
+            <Link
+              to="/episodes"
+              className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition"
+            >
+              Voir les épisodes
+              <span aria-hidden>→</span>
+            </Link>
+
+            {/* Hamburger mobile */}
+            <button
+              onClick={() => setOpen(!open)}
+              className="md:hidden flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-md hover:bg-muted transition"
+              aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+            >
+              <span className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "translate-y-2 rotate-45" : ""}`} />
+              <span className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "opacity-0" : ""}`} />
+              <span className={`block h-0.5 w-6 bg-foreground transition-all duration-200 ${open ? "-translate-y-2 -rotate-45" : ""}`} />
+            </button>
+          </div>
         </div>
       </div>
 
