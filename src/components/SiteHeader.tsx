@@ -19,7 +19,7 @@ export function SiteHeader() {
 
           {/* Symbole — aussi grand que la barre le permet */}
           <Link to="/" className="flex items-center group" onClick={() => setOpen(false)}>
-            <img src="/logo-symbol.png" alt="Ciel ouvert" className="h-[72px] w-auto" />
+            <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-[72px] w-auto" />
           </Link>
 
           {/* Navigation desktop */}

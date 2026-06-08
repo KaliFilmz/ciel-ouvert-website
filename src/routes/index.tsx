@@ -32,15 +32,7 @@ function HomePage() {
             {/* Overlay blanc léger pour lisibilité du texte navy */}
             <div className="absolute inset-0 bg-white/60" />
           </div>
-          <div className="mx-auto max-w-6xl px-6 pt-0 pb-24 md:pb-36">
-            {/* Logo — centré, whitespace interne compensé par -my */}
-            <div className="flex justify-center -mt-6 -mb-4">
-              <img
-                src="/logo-transparent.png"
-                alt="Ciel ouvert — Média associatif"
-                className="w-[70vw] max-w-[380px] md:max-w-[500px]"
-              />
-            </div>
+          <div className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-36">
             <div className="text-center">
               <h1 className="font-serif text-5xl font-semibold leading-[1.05] text-bleu-nuit md:text-7xl">
                 Le ciel s’ouvre <br />
