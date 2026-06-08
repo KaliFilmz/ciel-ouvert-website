@@ -21,9 +21,9 @@ function HomePage() {
       <main className="flex-1">
         {/* HERO — fond clair pour que le logo navy soit visible */}
         <section className="bg-gradient-to-b from-ciel-pale via-white to-background">
-          <div className="mx-auto max-w-6xl px-6 pt-16 pb-32 md:pt-24 md:pb-44">
-            {/* Logo transparent — très grand, centré */}
-            <div className="mb-14 flex justify-center">
+          <div className="mx-auto max-w-6xl px-6 pt-6 pb-24 md:pt-8 md:pb-36">
+            {/* Logo transparent — très grand, collé sous la navbar */}
+            <div className="mb-5 flex justify-center">
               <img
                 src="/logo-transparent.png"
                 alt="Ciel ouvert — Média associatif"
@@ -31,8 +31,7 @@ function HomePage() {
               />
             </div>
             <div className="text-center">
-              <span className="eyebrow text-bleu-vif">Lancement août 2026</span>
-              <h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.05] text-bleu-nuit md:text-7xl">
+              <h1 className="font-serif text-5xl font-semibold leading-[1.05] text-bleu-nuit md:text-7xl">
                 Le ciel s’ouvre <br />
                 <span className="italic text-bleu-vif">sur Genève.</span>
               </h1>
