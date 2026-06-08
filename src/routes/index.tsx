@@ -33,7 +33,17 @@ function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-b from-minuit/85 via-bleu-nuit/70 to-background" />
           </div>
           <div className="mx-auto max-w-6xl px-6 pt-24 pb-32 md:pt-36 md:pb-44">
-            <span className="eyebrow text-soleil">Charte v1.0 · Lancement août 2026</span>
+            {/* Logo officiel — grand sur fond sombre */}
+            <div className="mb-10">
+              <div className="inline-block overflow-hidden rounded-2xl shadow-2xl shadow-minuit/60">
+                <img
+                  src="/logo-light.png"
+                  alt="Ciel ouvert — Média associatif"
+                  className="block h-28 w-auto md:h-36"
+                />
+              </div>
+            </div>
+            <span className="eyebrow text-soleil">Lancement août 2026</span>
             <h1 className="mt-6 max-w-4xl font-serif text-5xl font-semibold leading-[1.05] text-white md:text-7xl">
               Le ciel s’ouvre <br />
               <span className="italic text-ciel-doux">sur Genève.</span>

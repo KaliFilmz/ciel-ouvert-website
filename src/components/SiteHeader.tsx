@@ -14,9 +14,9 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Link to="/" className="flex items-center gap-2 group">
           <img
-            src="/logo-light.svg"
+            src="/logo-light.png"
             alt="Ciel ouvert"
-            className="h-9 w-auto"
+            className="h-10 w-auto"
           />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
