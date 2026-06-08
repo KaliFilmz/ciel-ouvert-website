@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { episodes } from "@/lib/episodes";
-import heroImg from "@/assets/hero-sunrise.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -20,34 +19,24 @@ function HomePage() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
       <main className="flex-1">
-        {/* HERO */}
-        <section className="relative overflow-hidden">
-          <div className="absolute inset-0 -z-10">
-            <img
-              src={heroImg}
-              alt=""
-              width={1920}
-              height={1080}
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-minuit/85 via-bleu-nuit/70 to-background" />
-          </div>
-          <div className="mx-auto max-w-6xl px-6 pt-20 pb-32 md:pt-28 md:pb-44">
+        {/* HERO — fond clair pour que le logo navy soit visible */}
+        <section className="bg-gradient-to-b from-ciel-pale via-white to-background">
+          <div className="mx-auto max-w-6xl px-6 pt-16 pb-32 md:pt-24 md:pb-44">
             {/* Logo transparent — très grand, centré */}
-            <div className="mb-12 flex justify-center">
+            <div className="mb-14 flex justify-center">
               <img
                 src="/logo-transparent.png"
                 alt="Ciel ouvert — Média associatif"
-                className="w-80 max-w-full drop-shadow-2xl md:w-[520px]"
+                className="w-[88vw] max-w-[640px] md:max-w-[820px]"
               />
             </div>
             <div className="text-center">
-              <span className="eyebrow text-soleil">Lancement août 2026</span>
-              <h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.05] text-white md:text-7xl">
+              <span className="eyebrow text-bleu-vif">Lancement août 2026</span>
+              <h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.05] text-bleu-nuit md:text-7xl">
                 Le ciel s’ouvre <br />
-                <span className="italic text-ciel-doux">sur Genève.</span>
+                <span className="italic text-bleu-vif">sur Genève.</span>
               </h1>
-              <p className="mt-8 mx-auto max-w-xl text-lg leading-relaxed text-ciel-doux">
+              <p className="mt-8 mx-auto max-w-xl text-lg leading-relaxed text-foreground/70">
                 Un média associatif numérique qui met en lumière les associations du Canton de
                 Genève — celles qui font vivre la culture, le sport, la solidarité et l’engagement
                 citoyen.
@@ -55,14 +44,14 @@ function HomePage() {
               <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <Link
                   to="/episodes"
-                  className="inline-flex items-center gap-2 rounded-full bg-soleil px-6 py-3 text-sm font-semibold text-minuit hover:opacity-90 transition"
+                  className="inline-flex items-center gap-2 rounded-full bg-bleu-nuit px-6 py-3 text-sm font-semibold text-white hover:opacity-90 transition"
                 >
                   Découvrir les 8 épisodes
                   <span aria-hidden>→</span>
                 </Link>
                 <Link
                   to="/le-media"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition"
+                  className="inline-flex items-center gap-2 rounded-full border border-bleu-nuit/30 px-6 py-3 text-sm font-medium text-bleu-nuit hover:bg-bleu-nuit/5 transition"
                 >
                   Notre démarche
                 </Link>
