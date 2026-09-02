@@ -7,7 +7,7 @@ export const Route = createFileRoute("/episodes")({
   head: () => ({
     meta: [
       { title: "Épisodes — Ciel ouvert" },
-      { name: "description", content: "Calendrier des huit épisodes de la saison 01 : huit associations genevoises, d’août 2026 à mars 2027." },
+      { name: "description", content: "Calendrier des huit épisodes de la saison 01 : huit associations genevoises, de septembre à décembre 2026." },
     ],
   }),
   component: EpisodesPage,

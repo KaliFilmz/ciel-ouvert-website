@@ -2,13 +2,12 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { episodes } from "@/lib/episodes";
-import geneveHero from "@/assets/geneve-hero.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Ciel ouvert — Média associatif genevois" },
-      { name: "description", content: "Portraits vidéo des associations du Canton de Genève. Un épisode par mois, dès août 2026." },
+      { name: "description", content: "Portraits vidéo des associations du Canton de Genève. 8 épisodes, de septembre à décembre 2026." },
     ],
   }),
   component: HomePage,
@@ -20,17 +19,20 @@ function HomePage() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
       <main className="flex-1">
-        {/* HERO — photo Genève floutée en fond */}
+        {/* HERO — vidéo drone Jet d'Eau en fond */}
         <section className="relative overflow-hidden">
-          {/* Image Genève — légèrement floutée */}
           <div className="absolute inset-0 -z-10">
-            <img
-              src={geneveHero}
-              alt=""
-              className="h-full w-full object-cover scale-105 blur-[3px]"
+            <video
+              src="/hero-drone.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="h-full w-full object-cover"
             />
-            {/* Overlay sombre — laisse voir la photo, textes en blanc */}
-            <div className="absolute inset-0 bg-minuit/55" />
+            {/* Overlay sombre — textes en blanc lisibles */}
+            <div className="absolute inset-0 bg-minuit/60" />
           </div>
           <div className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-36">
             <div className="text-center">
@@ -85,18 +87,10 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="mt-16 grid gap-px overflow-hidden rounded-2xl bg-border md:grid-cols-3">
-            {[
-              { k: "8", l: "épisodes mensuels", d: "Une association portraitée chaque mois, d’août 2026 à mars 2027." },
-              { k: "25–40k", l: "vues cumulées visées", d: "Sur YouTube et les réseaux, en relais avec les associations." },
-              { k: "100%", l: "diffusion gratuite", d: "Accessible à tous — YouTube, Instagram, TikTok, Facebook." },
-            ].map((s) => (
-              <div key={s.l} className="bg-card p-8">
-                <div className="font-serif text-5xl font-semibold text-primary">{s.k}</div>
-                <div className="eyebrow mt-3 text-bleu-vif">{s.l}</div>
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-              </div>
-            ))}
+          <div className="mt-16 overflow-hidden rounded-2xl border border-border bg-card p-8 md:p-10 max-w-sm">
+            <div className="font-serif text-5xl font-semibold text-primary">8</div>
+            <div className="eyebrow mt-3 text-bleu-vif">épisodes</div>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">Une association portraitée deux fois par mois, de septembre à décembre 2026.</p>
           </div>
         </section>
 

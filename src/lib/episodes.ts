@@ -8,12 +8,12 @@ export type Episode = {
 };
 
 export const episodes: Episode[] = [
-  { number: 1, date: "20 août 2026", iso: "2026-08-20", name: "Chrome", description: "Ateliers de céramique pour différents publics.", category: "Culturel" },
-  { number: 2, date: "20 septembre 2026", iso: "2026-09-20", name: "Reverse Sound", description: "Organisation d’événements musicaux à Genève.", category: "Musique" },
-  { number: 3, date: "20 octobre 2026", iso: "2026-10-20", name: "La Liane", description: "Voyages humanitaires à l’étranger.", category: "Solidarité" },
-  { number: 4, date: "20 novembre 2026", iso: "2026-11-20", name: "Pervenches", description: "Le sport comme outil d’inclusion sociale.", category: "Sport" },
-  { number: 5, date: "20 décembre 2026", iso: "2026-12-20", name: "Contact Seniors", description: "Accompagnement des personnes âgées.", category: "Social" },
-  { number: 6, date: "20 janvier 2027", iso: "2027-01-20", name: "Geneva Skate", description: "Apprentissage du skateboard et autres sports.", category: "Sport" },
-  { number: 7, date: "20 février 2027", iso: "2027-02-20", name: "L’Enclume", description: "Soutien aux musicien·ne·s et technicien·ne·s genevois·es.", category: "Musique" },
-  { number: 8, date: "20 mars 2027", iso: "2027-03-20", name: "Hypnotise", description: "Films et productions audio.", category: "Audiovisuel" },
+  { number: 1, date: "15 septembre 2026", iso: "2026-09-15", name: "Reverse Sound", description: "Organisation d'événements musicaux alternatifs à Genève.", category: "Musique" },
+  { number: 2, date: "30 septembre 2026", iso: "2026-09-30", name: "ET PK PAS ?", description: "Une association qui questionne, bouscule et fait bouger les lignes.", category: "Culturel" },
+  { number: 3, date: "15 octobre 2026", iso: "2026-10-15", name: "YAFFA", description: "Engagement au service de la communauté genevoise.", category: "Solidarité" },
+  { number: 4, date: "30 octobre 2026", iso: "2026-10-30", name: "ADEMAG", description: "Accompagnement et défense des intérêts de ses membres.", category: "Social" },
+  { number: 5, date: "15 novembre 2026", iso: "2026-11-15", name: "La Manivelle", description: "Cinéma et culture audiovisuelle accessible à tous.", category: "Cinéma" },
+  { number: 6, date: "30 novembre 2026", iso: "2026-11-30", name: "MERAKI", description: "Art, créativité et lien social au cœur de Genève.", category: "Culturel" },
+  { number: 7, date: "15 décembre 2026", iso: "2026-12-15", name: "Découvrir", description: "Explorer, apprendre et s'ouvrir au monde.", category: "Éducation" },
+  { number: 8, date: "30 décembre 2026", iso: "2026-12-30", name: "RCPG", description: "Le sport comme vecteur de cohésion et de dépassement.", category: "Sport" },
 ];
