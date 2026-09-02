@@ -64,8 +64,8 @@ function HomePage() {
           </div>
         </section>
 
-        {/* MISSION / 3 colonnes */}
-        <section className="mx-auto max-w-6xl px-6 py-24">
+        {/* MISSION */}
+        <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
             <div>
               <span className="eyebrow text-bleu-vif">Notre mission</span>
@@ -86,16 +86,10 @@ function HomePage() {
               </p>
             </div>
           </div>
-
-          <div className="mt-16 overflow-hidden rounded-2xl border border-border bg-card p-8 md:p-10 max-w-sm">
-            <div className="font-serif text-5xl font-semibold text-primary">8</div>
-            <div className="eyebrow mt-3 text-bleu-vif">épisodes</div>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">Une association portraitée deux fois par mois, de septembre à décembre 2026.</p>
-          </div>
         </section>
 
         {/* PROCHAIN ÉPISODE */}
-        <section className="bg-ciel-pale py-24">
+        <section className="bg-ciel-pale py-16">
           <div className="mx-auto max-w-6xl px-6">
             <div className="flex flex-col gap-10 rounded-3xl bg-minuit p-10 md:flex-row md:items-end md:justify-between md:p-16">
               <div>
@@ -118,7 +112,7 @@ function HomePage() {
         </section>
 
         {/* APERÇU ÉPISODES */}
-        <section className="mx-auto max-w-6xl px-6 py-24">
+        <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="flex items-end justify-between">
             <div>
               <span className="eyebrow text-bleu-vif">Saison 01</span>
@@ -146,7 +140,7 @@ function HomePage() {
         </section>
 
         {/* CITATION */}
-        <section className="mx-auto max-w-4xl px-6 py-24 text-center">
+        <section className="mx-auto max-w-4xl px-6 py-16 text-center">
           <blockquote className="font-serif text-3xl italic leading-snug text-primary md:text-5xl">
             « La transparence est une forme d’engagement. »
           </blockquote>
