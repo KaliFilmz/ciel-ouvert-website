@@ -39,7 +39,7 @@ function EpisodesPage() {
                     0{ep.number}
                   </div>
                   {/* Logo — boîte fixe, logo centré */}
-                  <div className="h-14 w-[140px] flex items-center justify-center flex-shrink-0">
+                  <div className="h-11 w-[140px] flex items-center justify-center flex-shrink-0">
                     <img
                       src={ep.logo}
                       alt={ep.name}

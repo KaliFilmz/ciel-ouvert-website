@@ -140,7 +140,7 @@ function HomePage() {
                   </span>
                 </div>
                 {/* Logo association — boîte fixe, logo centré */}
-                <div className="mt-5 h-20 w-full flex items-center justify-center">
+                <div className="mt-5 h-16 w-full flex items-center justify-center">
                   <img
                     src={ep.logo}
                     alt={ep.name}
