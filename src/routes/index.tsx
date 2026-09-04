@@ -139,12 +139,12 @@ function HomePage() {
                     {ep.category}
                   </span>
                 </div>
-                {/* Logo association */}
-                <div className="mt-5 h-10 flex items-center">
+                {/* Logo association — boîte fixe, logo centré */}
+                <div className="mt-5 h-12 w-full flex items-center justify-center">
                   <img
                     src={ep.logo}
                     alt={ep.name}
-                    className="max-h-10 max-w-[120px] w-auto object-contain"
+                    className="h-full w-full object-contain object-center"
                     style={ep.logoInvert ? { filter: "invert(1)" } : undefined}
                   />
                 </div>

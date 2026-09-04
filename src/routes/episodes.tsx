@@ -38,12 +38,12 @@ function EpisodesPage() {
                   <div className="font-serif text-3xl font-semibold text-bleu-vif">
                     0{ep.number}
                   </div>
-                  {/* Logo */}
-                  <div className="h-10 flex items-center">
+                  {/* Logo — boîte fixe, logo centré */}
+                  <div className="h-10 w-[140px] flex items-center justify-center flex-shrink-0">
                     <img
                       src={ep.logo}
                       alt={ep.name}
-                      className="max-h-10 max-w-[140px] w-auto object-contain"
+                      className="h-full w-full object-contain object-center"
                       style={ep.logoInvert ? { filter: "invert(1)" } : undefined}
                     />
                   </div>
