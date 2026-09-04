@@ -34,14 +34,23 @@ function EpisodesPage() {
           <ol className="space-y-px overflow-hidden rounded-2xl border border-border bg-border">
             {episodes.map((ep) => (
               <li key={ep.number} className="bg-card transition hover:bg-ciel-pale/60">
-                <article className="grid items-center gap-6 p-6 md:grid-cols-[80px_140px_1fr_120px_auto] md:p-8">
-                  <div className="font-serif text-4xl font-semibold text-bleu-vif">
+                <article className="grid items-center gap-6 p-6 md:grid-cols-[60px_160px_1fr_120px_auto] md:p-8">
+                  <div className="font-serif text-3xl font-semibold text-bleu-vif">
                     0{ep.number}
                   </div>
-                  <div className="font-mono text-sm text-muted-foreground">{ep.date}</div>
+                  {/* Logo */}
+                  <div className="h-10 flex items-center">
+                    <img
+                      src={ep.logo}
+                      alt={ep.name}
+                      className="max-h-10 max-w-[140px] w-auto object-contain"
+                      style={ep.logoInvert ? { filter: "invert(1)" } : undefined}
+                    />
+                  </div>
                   <div>
-                    <h3 className="font-serif text-2xl text-primary">{ep.name}</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">{ep.description}</p>
+                    <h3 className="font-serif text-xl text-primary">{ep.name}</h3>
+                    <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{ep.description}</p>
+                    <div className="mt-1 font-mono text-xs text-bleu-vif">{ep.date}</div>
                   </div>
                   <span className="justify-self-start rounded-full bg-ciel-pale px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-bleu-nuit md:justify-self-center">
                     {ep.category}

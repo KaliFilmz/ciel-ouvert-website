@@ -95,7 +95,15 @@ function HomePage() {
               <div>
                 <span className="eyebrow text-soleil">Premier épisode</span>
                 <div className="mt-3 font-mono text-sm text-ciel-doux">{next.date}</div>
-                <h3 className="mt-4 font-serif text-5xl font-semibold text-white md:text-6xl">
+                {/* Logo blanc sur fond sombre — pas d'invert */}
+                <div className="mt-4 h-12 flex items-center">
+                  <img
+                    src={next.logo}
+                    alt={next.name}
+                    className="max-h-12 max-w-[200px] w-auto object-contain"
+                  />
+                </div>
+                <h3 className="mt-3 font-serif text-5xl font-semibold text-white md:text-6xl">
                   {next.name}
                 </h3>
                 <p className="mt-4 max-w-md text-ciel-doux">{next.description}</p>
@@ -124,16 +132,25 @@ function HomePage() {
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {episodes.slice(0, 4).map((ep) => (
-              <article key={ep.number} className="group rounded-xl border border-border bg-card p-6 transition hover:border-bleu-vif">
+              <article key={ep.number} className="group rounded-xl border border-border bg-card p-6 transition hover:border-bleu-vif flex flex-col">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-xs text-muted-foreground">EP.0{ep.number}</span>
                   <span className="rounded-full bg-ciel-pale px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-bleu-nuit">
                     {ep.category}
                   </span>
                 </div>
-                <h3 className="mt-6 font-serif text-2xl text-primary">{ep.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{ep.description}</p>
-                <div className="mt-6 font-mono text-xs text-bleu-vif">{ep.date}</div>
+                {/* Logo association */}
+                <div className="mt-5 h-10 flex items-center">
+                  <img
+                    src={ep.logo}
+                    alt={ep.name}
+                    className="max-h-10 max-w-[120px] w-auto object-contain"
+                    style={ep.logoInvert ? { filter: "invert(1)" } : undefined}
+                  />
+                </div>
+                <h3 className="mt-4 font-serif text-xl text-primary">{ep.name}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground line-clamp-3">{ep.description}</p>
+                <div className="mt-auto pt-4 font-mono text-xs text-bleu-vif">{ep.date}</div>
               </article>
             ))}
           </div>
