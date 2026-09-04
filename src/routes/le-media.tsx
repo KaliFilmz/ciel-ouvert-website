@@ -81,6 +81,18 @@ function MediaPage() {
           </div>
         </section>
 
+        {/* PHOTOS TERRAIN */}
+        <section className="mx-auto max-w-6xl px-6 py-12">
+          <div className="grid gap-3 md:grid-cols-[2fr_1fr]">
+            <div className="overflow-hidden rounded-2xl aspect-[3/2]">
+              <img src="/images/tournage/tournage-4.jpg" alt="Sur le terrain — Ciel ouvert" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div className="overflow-hidden rounded-2xl aspect-[3/2] md:aspect-auto">
+              <img src="/images/tournage/tournage-5.jpg" alt="Sur le terrain — Ciel ouvert" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+          </div>
+        </section>
+
         {/* DEROULEMENT */}
         <section className="mx-auto max-w-6xl px-6 py-24">
           <span className="eyebrow text-bleu-vif">Déroulement du projet</span>
@@ -105,11 +117,11 @@ function MediaPage() {
           <div className="mx-auto max-w-4xl px-6 text-center">
             <span className="eyebrow text-soleil">Calendrier</span>
             <h2 className="mt-4 font-serif text-4xl font-semibold md:text-5xl">
-              Un épisode par mois, pendant huit mois.
+              Deux épisodes par mois, de septembre à décembre.
             </h2>
             <p className="mt-6 text-ciel-doux">
-              La diffusion débute le 20 août 2026 et se prolonge jusqu’en mars 2027. Chaque
-              épisode est consacré à une association genevoise différente.
+              La diffusion débute le 15 septembre 2026, avec un épisode le 15 et le 30 de chaque mois.
+              Chaque épisode est consacré à une association genevoise différente.
             </p>
           </div>
         </section>

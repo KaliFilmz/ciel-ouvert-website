@@ -139,6 +139,25 @@ function HomePage() {
           </div>
         </section>
 
+        {/* COULISSES — photos tournage */}
+        <section className="mx-auto max-w-6xl px-6 py-16">
+          <div className="mb-8">
+            <span className="eyebrow text-bleu-vif">Dans les coulisses</span>
+            <h2 className="mt-3 text-3xl font-semibold text-primary">Le tournage, de l'intérieur.</h2>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-3">
+            <div className="overflow-hidden rounded-xl aspect-[4/3]">
+              <img src="/images/tournage/tournage-1.jpg" alt="Tournage Ciel ouvert" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div className="overflow-hidden rounded-xl aspect-[4/3]">
+              <img src="/images/tournage/tournage-2.jpg" alt="Tournage Ciel ouvert" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+            <div className="overflow-hidden rounded-xl aspect-[4/3]">
+              <img src="/images/tournage/tournage-3.jpg" alt="Tournage Ciel ouvert" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            </div>
+          </div>
+        </section>
+
         {/* CITATION */}
         <section className="mx-auto max-w-4xl px-6 py-16 text-center">
           <blockquote className="font-serif text-3xl italic leading-snug text-primary md:text-5xl">
