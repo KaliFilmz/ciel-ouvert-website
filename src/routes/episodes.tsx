@@ -34,28 +34,58 @@ function EpisodesPage() {
           <ol className="space-y-px overflow-hidden rounded-2xl border border-border bg-border">
             {episodes.map((ep) => (
               <li key={ep.number} className="bg-card transition hover:bg-ciel-pale/60">
-                <article className="grid items-center gap-6 p-6 md:grid-cols-[60px_160px_1fr_120px_auto] md:p-8">
-                  <div className="font-serif text-3xl font-semibold text-bleu-vif">
-                    0{ep.number}
+                <article className="p-4 md:p-8">
+
+                  {/* ── Mobile layout ── */}
+                  <div className="flex items-center gap-3 md:hidden">
+                    <span className="w-8 shrink-0 font-serif text-xl font-semibold text-bleu-vif">
+                      0{ep.number}
+                    </span>
+                    <div className="h-8 w-[64px] shrink-0 flex items-center justify-center">
+                      <img
+                        src={ep.logo}
+                        alt={ep.name}
+                        className="h-full w-full object-contain object-center"
+                        style={ep.logoInvert ? { filter: "invert(1)" } : undefined}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-serif text-sm font-semibold leading-tight text-primary truncate">
+                        {ep.name}
+                      </h3>
+                      <div className="mt-0.5 font-mono text-[10px] text-bleu-vif">{ep.date}</div>
+                    </div>
+                    <span className="shrink-0 rounded-full bg-ciel-pale px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-bleu-nuit">
+                      {ep.category}
+                    </span>
                   </div>
-                  {/* Logo — boîte fixe, logo centré */}
-                  <div className="h-11 w-[140px] flex items-center justify-center flex-shrink-0">
-                    <img
-                      src={ep.logo}
-                      alt={ep.name}
-                      className="max-h-full max-w-full object-contain"
-                      style={ep.logoInvert ? { filter: "invert(1)" } : undefined}
-                    />
+
+                  {/* ── Desktop layout ── */}
+                  <div className="hidden md:grid md:grid-cols-[60px_120px_1fr_120px_auto] md:items-center md:gap-6">
+                    <div className="font-serif text-3xl font-semibold text-bleu-vif">
+                      0{ep.number}
+                    </div>
+                    <div className="h-10 w-[120px] flex items-center justify-center flex-shrink-0">
+                      <img
+                        src={ep.logo}
+                        alt={ep.name}
+                        className="h-full w-full object-contain object-center"
+                        style={ep.logoInvert ? { filter: "invert(1)" } : undefined}
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-xl text-primary">{ep.name}</h3>
+                      <p className="mt-1 text-sm text-muted-foreground line-clamp-2">
+                        {ep.description}
+                      </p>
+                      <div className="mt-1 font-mono text-xs text-bleu-vif">{ep.date}</div>
+                    </div>
+                    <span className="justify-self-center rounded-full bg-ciel-pale px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-bleu-nuit">
+                      {ep.category}
+                    </span>
+                    <span className="text-sm font-medium text-bleu-vif">À venir →</span>
                   </div>
-                  <div>
-                    <h3 className="font-serif text-xl text-primary">{ep.name}</h3>
-                    <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{ep.description}</p>
-                    <div className="mt-1 font-mono text-xs text-bleu-vif">{ep.date}</div>
-                  </div>
-                  <span className="justify-self-start rounded-full bg-ciel-pale px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-bleu-nuit md:justify-self-center">
-                    {ep.category}
-                  </span>
-                  <span className="text-sm font-medium text-bleu-vif">À venir →</span>
+
                 </article>
               </li>
             ))}
