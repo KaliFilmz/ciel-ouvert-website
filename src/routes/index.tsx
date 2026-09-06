@@ -80,9 +80,10 @@ function HomePage() {
                 soutien aux plus vulnérables.
               </p>
               <p>
-                <em className="font-serif">Ciel ouvert</em> propose huit portraits filmés sur le
-                terrain, conçus pour être professionnels, accessibles et durables. Une série
-                pensée comme un outil de référence pour le tissu associatif genevois.
+                <em className="font-serif">Ciel Ouvert</em> propose huit interviews filmées
+                directement sur le terrain, à la rencontre des associations genevoises. Une série
+                conçue pour être professionnelle, accessible et durable, et pensée comme un outil
+                de référence pour mettre en lumière le tissu associatif genevois.
               </p>
 
             </div>
