@@ -71,6 +71,25 @@ function AProposPage() {
                 />
               </div>
             </div>
+
+            {/* Logos soutiens */}
+            <div className="mt-8 pt-8 border-t border-bleu-vif/20">
+              <p className="text-xs font-semibold uppercase tracking-widest text-bleu-vif mb-5">
+                Avec le soutien de
+              </p>
+              <div className="flex flex-wrap items-center gap-10">
+                <img
+                  src="/images/logos/loterie-romande.png"
+                  alt="Loterie Romande"
+                  className="h-8 w-auto object-contain"
+                />
+                <img
+                  src="/images/logos/fondation-leenards.png"
+                  alt="Fondation Leenards"
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
