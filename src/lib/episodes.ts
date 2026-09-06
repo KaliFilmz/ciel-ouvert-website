@@ -34,7 +34,7 @@ export const episodes: Episode[] = [
     date: "15 octobre 2026",
     iso: "2026-10-15",
     name: "YAFFA",
-    description: "YAFFA soutient la Palestine à travers une approche psychosociale fondée sur la cohésion sociale et les valeurs de coopération, de respect et de dignité.",
+    description: "YAFFA conçoit, coordonne et soutient des projets d'intervention psychosociale, culturelle et artistique en Palestine et en Suisse.",
     category: "Solidarité",
     logo: "/images/logos/yaffa.png",
   },
