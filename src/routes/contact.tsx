@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
+import { Resend } from "resend";
 import { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -15,7 +16,6 @@ const sendContactEmail = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => input as ContactFormData)
   .handler(async ({ data }) => {
     const payload = data;
-    const { Resend } = await import("resend");
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "Ciel Ouvert <onboarding@resend.dev>",
