@@ -12,29 +12,6 @@ export const Route = createFileRoute("/le-media")({
   component: MediaPage,
 });
 
-const phases = [
-  {
-    tag: "01 · Pré-production",
-    period: "Juin → août 2026",
-    text: "Identification et sélection des associations, élaboration du format éditorial, repérage des lieux, préparation logistique et stratégie de diffusion.",
-  },
-  {
-    tag: "02 · Tournage",
-    period: "Sur le terrain",
-    text: "Chaque tournage se déroule directement dans les locaux de l’association : interview approfondie, captation d’images sur le terrain, proximité et écoute.",
-  },
-  {
-    tag: "03 · Post-production",
-    period: "Montage & finition",
-    text: "Montage narratif, colorimétrie, sound design et création de formats courts adaptés aux réseaux sociaux pour amplifier la diffusion.",
-  },
-  {
-    tag: "04 · Diffusion",
-    period: "Août 2026 → mars 2027",
-    text: "Chaîne YouTube dédiée, déclinaison sur Instagram, TikTok et Facebook, relais par les associations partenaires. Un épisode par mois.",
-  },
-];
-
 const objectifs = [
   { t: "Visibilité", d: "Offrir aux associations un espace de présentation professionnel, durable et réutilisable pour leur propre communication." },
   { t: "Engagement", d: "Encourager l’engagement citoyen, en particulier chez les jeunes, en montrant concrètement l’importance du bénévolat." },
@@ -90,25 +67,6 @@ function MediaPage() {
             <div className="overflow-hidden rounded-2xl aspect-[3/2] md:aspect-auto">
               <img src="/images/tournage/tournage-5.jpg" alt="Sur le terrain — Ciel ouvert" className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
             </div>
-          </div>
-        </section>
-
-        {/* DEROULEMENT */}
-        <section className="mx-auto max-w-6xl px-6 py-24">
-          <span className="eyebrow text-bleu-vif">Déroulement du projet</span>
-          <h2 className="mt-3 max-w-2xl font-serif text-4xl font-semibold text-primary">
-            De la rencontre à la diffusion.
-          </h2>
-          <div className="mt-12 space-y-px overflow-hidden rounded-2xl border border-border bg-border">
-            {phases.map((p) => (
-              <div key={p.tag} className="grid gap-4 bg-card p-8 md:grid-cols-[1fr_2fr] md:gap-12 md:p-10">
-                <div>
-                  <div className="font-mono text-sm text-bleu-vif">{p.tag}</div>
-                  <div className="mt-2 text-sm text-muted-foreground">{p.period}</div>
-                </div>
-                <p className="text-base leading-relaxed text-foreground/85">{p.text}</p>
-              </div>
-            ))}
           </div>
         </section>
 
