@@ -31,8 +31,8 @@ function MediaPage() {
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-foreground/85">
             <em className="font-serif">Ciel ouvert</em> est un média associatif numérique porté
-            par l’association <strong>Lumera</strong> et <strong>La Ruche</strong>, un collectif de jeunes passionnés
-            d’audiovisuel et de communication. Notre mission : valoriser les associations qui
+            par l’association <strong>Lumera</strong>, un collectif de jeunes passionnés
+            d’audiovisuel et de communication, et <strong>La Ruche</strong>. Notre mission : valoriser les associations qui
             font vivre la cohésion sociale, la culture et l’engagement citoyen à Genève.
           </p>
         </section>
