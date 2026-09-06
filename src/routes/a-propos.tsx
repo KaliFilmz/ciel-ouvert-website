@@ -52,6 +52,25 @@ function AProposPage() {
                 variés que la culture, le sport, le social, l'environnement ou l'éducation.
               </p>
             </div>
+
+            {/* Logos porteurs */}
+            <div className="mt-10 pt-8 border-t border-bleu-vif/20">
+              <p className="text-xs font-semibold uppercase tracking-widest text-bleu-vif mb-5">
+                Une initiative de
+              </p>
+              <div className="flex flex-wrap items-center gap-8">
+                <img
+                  src="/images/logos/lumera.png"
+                  alt="Lumera Association"
+                  className="h-8 w-auto object-contain"
+                />
+                <img
+                  src="/images/logos/la-ruche.png"
+                  alt="La Ruche Association"
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
