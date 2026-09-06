@@ -146,8 +146,8 @@ function HomePage() {
                   <img
                     src={ep.logo}
                     alt={ep.name}
-                    className="h-full w-auto max-w-[150px] object-contain"
-                    style={ep.logoInvert ? { filter: "invert(1)" } : undefined}
+                    className="h-full w-auto object-contain"
+                    style={{ maxWidth: ep.logoMaxW ?? "150px", ...(ep.logoInvert ? { filter: "invert(1)" } : {}) }}
                   />
                 </div>
                 <h3 className="mt-4 font-serif text-xl text-primary">{ep.name}</h3>

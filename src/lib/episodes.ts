@@ -7,6 +7,7 @@ export type Episode = {
   category: string;
   logo: string;         // chemin depuis /public/images/logos/
   logoInvert?: boolean; // true si le logo est blanc → afficher en noir via CSS
+  logoMaxW?: string;    // override largeur max (ex: "100px")
 };
 
 export const episodes: Episode[] = [
@@ -28,6 +29,7 @@ export const episodes: Episode[] = [
     description: "ET PK PAS ? est une association apartisane qui promeut et soutient la participation citoyenne et démocratique des jeunes en Suisse.",
     category: "Citoyenneté",
     logo: "/images/logos/et-pk-pas.png",
+    logoMaxW: "110px",
   },
   {
     number: 3,
