@@ -84,6 +84,7 @@ function HomePage() {
                 terrain, conçus pour être professionnels, accessibles et durables. Une série
                 pensée comme un outil de référence pour le tissu associatif genevois.
               </p>
+
             </div>
           </div>
         </section>
@@ -124,7 +125,7 @@ function HomePage() {
           <div className="flex items-end justify-between">
             <div>
               <span className="eyebrow text-bleu-vif">Saison 01</span>
-              <h2 className="mt-3 text-4xl font-semibold text-primary">Huit associations, huit regards.</h2>
+              <h2 className="mt-3 text-4xl font-semibold text-primary">Huit associations, huit histoires.</h2>
             </div>
             <Link to="/episodes" className="hidden md:inline text-sm font-medium text-bleu-vif hover:underline">
               Tout voir →
@@ -178,7 +179,7 @@ function HomePage() {
         {/* CITATION */}
         <section className="mx-auto max-w-4xl px-6 py-16 text-center">
           <blockquote className="font-serif text-3xl italic leading-snug text-primary md:text-5xl">
-            « La transparence est une forme d’engagement. »
+            « Chaque association a une histoire à raconter. »
           </blockquote>
           <div className="eyebrow mt-8 text-bleu-vif">Association Lumera</div>
         </section>

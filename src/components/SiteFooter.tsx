@@ -10,8 +10,8 @@ export function SiteFooter() {
               <img src="/logo-transparent.png" alt="Ciel ouvert" className="h-32 w-auto brightness-0 invert" />
             </div>
             <p className="mt-4 max-w-sm text-sm text-ciel-doux">
-              Média associatif numérique porté par l’association Lumera. Mise en lumière des
-              associations du Canton de Genève.
+              Média associatif numérique porté par l’association Lumera et La Ruche. Mise en
+              lumière des associations du Canton de Genève.
             </p>
           </div>
           <div>
@@ -28,8 +28,7 @@ export function SiteFooter() {
             <div className="eyebrow text-soleil">Suivre</div>
             <ul className="mt-4 space-y-2 text-sm text-ciel-doux">
               <li>YouTube — Ciel ouvert</li>
-              <li>Instagram · TikTok · Facebook</li>
-              <li>Genève, Suisse</li>
+              <li>Instagram — Ciel ouvert</li>
             </ul>
           </div>
         </div>
