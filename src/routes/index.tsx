@@ -151,7 +151,7 @@ function HomePage() {
                   />
                 </div>
                 <h3 className="mt-4 font-serif text-xl text-primary">{ep.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground line-clamp-3">{ep.description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{ep.description}</p>
                 <div className="mt-auto pt-4 font-mono text-xs text-bleu-vif">{ep.date}</div>
               </article>
             ))}
