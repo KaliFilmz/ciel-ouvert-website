@@ -25,8 +25,8 @@ function EpisodesPage() {
             <span className="italic text-bleu-vif">huit portraits.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-foreground/85">
-            Chaque mois, un nouvel épisode dédié à une association genevoise. Diffusion sur
-            YouTube et déclinaison courte sur Instagram, TikTok et Facebook.
+            Deux fois par mois, Ciel Ouvert donne la parole à une association genevoise à travers
+            une interview filmée, disponible en entier sur notre chaîne YouTube.
           </p>
         </section>
 
