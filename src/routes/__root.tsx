@@ -146,8 +146,8 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <HeadContent />
       </head>
