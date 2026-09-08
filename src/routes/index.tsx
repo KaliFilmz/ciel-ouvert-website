@@ -6,8 +6,11 @@ import { episodes } from "@/lib/episodes";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ciel ouvert — Média associatif genevois" },
-      { name: "description", content: "Portraits vidéo des associations du Canton de Genève. 8 épisodes, de septembre à décembre 2026." },
+      { title: "Ciel Ouvert — Média associatif genevois" },
+      { name: "description", content: "Ciel Ouvert donne la parole aux associations du Canton de Genève. 8 portraits vidéo filmés sur le terrain, de septembre à décembre 2026. Culture, sport, social, citoyenneté." },
+      { property: "og:title", content: "Ciel Ouvert — Média associatif genevois" },
+      { property: "og:description", content: "8 portraits vidéo d'associations genevoises. Culture, sport, social, citoyenneté — de septembre à décembre 2026." },
+      { property: "og:url", content: "https://www.ciel-ouvert.ch" },
     ],
   }),
   component: HomePage,

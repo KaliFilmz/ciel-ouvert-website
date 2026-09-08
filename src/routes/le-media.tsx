@@ -6,7 +6,10 @@ export const Route = createFileRoute("/le-media")({
   head: () => ({
     meta: [
       { title: "Le média — Ciel ouvert" },
-      { name: "description", content: "Notre démarche : valoriser les associations genevoises avec une série de portraits filmés sur le terrain." },
+      { name: "description", content: "La démarche de Ciel Ouvert : valoriser les associations genevoises à travers des portraits filmés sur le terrain. Un média numérique porté par Lumera et La Ruche à Genève." },
+      { property: "og:title", content: "Le média — Ciel Ouvert" },
+      { property: "og:description", content: "Portraits vidéo d'associations genevoises filmés sur le terrain. Visibilité, engagement, diversité, durabilité — la démarche de Ciel Ouvert." },
+      { property: "og:url", content: "https://www.ciel-ouvert.ch/le-media" },
     ],
   }),
   component: MediaPage,

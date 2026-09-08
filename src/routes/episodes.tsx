@@ -7,7 +7,10 @@ export const Route = createFileRoute("/episodes")({
   head: () => ({
     meta: [
       { title: "Épisodes — Ciel ouvert" },
-      { name: "description", content: "Calendrier des huit épisodes de la saison 01 : huit associations genevoises, de septembre à décembre 2026." },
+      { name: "description", content: "Les 8 épisodes de Ciel Ouvert : portraits vidéo d'associations genevoises en culture, sport, social et citoyenneté. Saison 01, septembre–décembre 2026 — Reverse Sound, ET PK PAS ?, YAFFA, ADEMAG, La Manivelle, MERAKI, Découvrir, RCPG." },
+      { property: "og:title", content: "Épisodes — Ciel Ouvert" },
+      { property: "og:description", content: "8 portraits vidéo d'associations du Canton de Genève. Saison 01, de septembre à décembre 2026." },
+      { property: "og:url", content: "https://www.ciel-ouvert.ch/episodes" },
     ],
   }),
   component: EpisodesPage,

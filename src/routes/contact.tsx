@@ -37,7 +37,10 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Ciel ouvert" },
-      { name: "description", content: "Contactez l'équipe de Ciel ouvert et l'association Lumera à Genève." },
+      { name: "description", content: "Contactez l'équipe de Ciel Ouvert et l'association Lumera à Genève. Une question, un partenariat, une candidature pour la saison 02 ? Écrivez-nous à info@ciel-ouvert.ch." },
+      { property: "og:title", content: "Contact — Ciel Ouvert" },
+      { property: "og:description", content: "Contactez Ciel Ouvert — média associatif genevois. Partenariat, candidature saison 02, ou toute autre question." },
+      { property: "og:url", content: "https://www.ciel-ouvert.ch/contact" },
     ],
   }),
   component: ContactPage,

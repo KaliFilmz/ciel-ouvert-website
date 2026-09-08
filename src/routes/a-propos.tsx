@@ -6,7 +6,10 @@ export const Route = createFileRoute("/a-propos")({
   head: () => ({
     meta: [
       { title: "À propos — Ciel ouvert" },
-      { name: "description", content: "L'histoire de Ciel Ouvert : un média associatif genevois porté par Lumera pour donner de la visibilité aux associations du Canton." },
+      { name: "description", content: "L'histoire de Ciel Ouvert : un média associatif genevois né de l'initiative de Lumera et La Ruche, soutenu par la Loterie Romande et la Fondation Leenards, pour donner de la visibilité aux associations du Canton de Genève." },
+      { property: "og:title", content: "À propos — Ciel Ouvert" },
+      { property: "og:description", content: "L'histoire de Ciel Ouvert : une initiative de Lumera et La Ruche pour valoriser les associations genevoises. Soutenu par la Loterie Romande et la Fondation Leenards." },
+      { property: "og:url", content: "https://www.ciel-ouvert.ch/a-propos" },
     ],
   }),
   component: AProposPage,
