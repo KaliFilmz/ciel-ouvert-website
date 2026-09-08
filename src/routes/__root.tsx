@@ -103,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Association Lumera" },
       { name: "robots", content: "index, follow" },
       { name: "language", content: "fr" },
-      { name: "google-site-verification", content: "05da5c5fce3232d9" },
+      { name: "google-site-verification", content: "aRHhZfukLLeFlQMTqwTqgqmm8XIrjLVCCCaLid9z7KI" },
       // Open Graph
       { property: "og:title", content: "Ciel Ouvert — Média associatif genevois" },
       {
