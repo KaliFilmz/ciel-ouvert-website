@@ -78,7 +78,7 @@ const jsonLd = JSON.stringify({
   description: "Média associatif numérique genevois. Portraits vidéo des associations du Canton de Genève.",
   foundingLocation: { "@type": "Place", name: "Genève, Suisse" },
   sameAs: [
-    "https://www.youtube.com/@cielouvert",
+    "https://www.youtube.com/@MediaCielOuvert",
     "https://www.instagram.com/ciel_ouvert.ch/",
   ],
   parentOrganization: { "@type": "Organization", name: "Association Lumera" },

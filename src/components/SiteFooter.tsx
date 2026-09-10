@@ -27,7 +27,7 @@ export function SiteFooter() {
           <div>
             <div className="eyebrow text-soleil">Suivre</div>
             <ul className="mt-4 space-y-2 text-sm text-ciel-doux">
-              <li><a href="https://www.youtube.com/@cielouvert" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">YouTube — Ciel ouvert ↗</a></li>
+              <li><a href="https://www.youtube.com/@MediaCielOuvert" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">YouTube — Ciel ouvert ↗</a></li>
               <li><a href="https://www.instagram.com/ciel_ouvert.ch/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Instagram @ciel_ouvert.ch ↗</a></li>
             </ul>
           </div>

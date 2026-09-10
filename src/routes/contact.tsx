@@ -176,7 +176,7 @@ function ContactPage() {
               <ul className="mt-4 space-y-3 text-ciel-doux">
                 <li>
                   <a
-                    href="https://www.youtube.com/@cielouvert"
+                    href="https://www.youtube.com/@MediaCielOuvert"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
