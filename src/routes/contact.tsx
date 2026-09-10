@@ -186,7 +186,7 @@ function ContactPage() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/cielouvert"
+                    href="https://www.instagram.com/ciel_ouvert.ch/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"

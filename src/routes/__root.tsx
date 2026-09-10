@@ -79,7 +79,7 @@ const jsonLd = JSON.stringify({
   foundingLocation: { "@type": "Place", name: "Genève, Suisse" },
   sameAs: [
     "https://www.youtube.com/@cielouvert",
-    "https://www.instagram.com/cielouvert",
+    "https://www.instagram.com/ciel_ouvert.ch/",
   ],
   parentOrganization: { "@type": "Organization", name: "Association Lumera" },
 });
