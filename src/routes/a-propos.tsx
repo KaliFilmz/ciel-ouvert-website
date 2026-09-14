@@ -49,6 +49,10 @@ function AProposPage() {
                 genevoises restent souvent peu visibles auprès du grand public.
               </p>
               <p>
+                Avec La Ruche, association socioculturelle engagée dans la vie locale et l'insertion
+                pédagogique.
+              </p>
+              <p>
                 Ciel Ouvert souhaite ainsi créer un espace médiatique entièrement consacré au monde
                 associatif genevois. À travers des rencontres et des contenus audiovisuels, le média
                 met en lumière celles et ceux qui s'engagent au quotidien, dans des domaines aussi
