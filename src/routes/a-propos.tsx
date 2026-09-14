@@ -44,13 +44,10 @@ function AProposPage() {
               <p>
                 Porté par <strong>Lumera</strong>, un collectif de jeunes passionnés par
                 l'audiovisuel et la communication numérique, et développé en collaboration avec{" "}
-                <strong>La Ruche</strong>, le projet est parti d'un constat : malgré leur rôle
+                <strong>La Ruche</strong>, association socioculturelle engagée dans la vie locale
+                et l'insertion pédagogique, le projet est parti d'un constat : malgré leur rôle
                 essentiel dans la vie sociale, culturelle et citoyenne du canton, les associations
                 genevoises restent souvent peu visibles auprès du grand public.
-              </p>
-              <p>
-                Avec La Ruche, association socioculturelle engagée dans la vie locale et l'insertion
-                pédagogique.
               </p>
               <p>
                 Ciel Ouvert souhaite ainsi créer un espace médiatique entièrement consacré au monde
