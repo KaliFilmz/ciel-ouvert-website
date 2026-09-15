@@ -45,7 +45,7 @@ function AProposPage() {
                 Porté par <strong>Lumera</strong>, un collectif de jeunes passionnés par
                 l'audiovisuel et la communication numérique, et développé en collaboration avec{" "}
                 <strong>La Ruche</strong>, une association socioculturelle engagée dans la vie
-                locale et l'insertion, le projet est né d'un constat simple : bien qu'elles jouent
+                locale et l'insertion pédagogique, le projet est né d'un constat simple : bien qu'elles jouent
                 un rôle essentiel dans la vie sociale, culturelle et citoyenne du canton, les
                 associations genevoises restent encore trop peu visibles auprès du grand public.
               </p>
