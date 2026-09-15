@@ -93,33 +93,78 @@ function HomePage() {
           </div>
         </section>
 
-        {/* PROCHAIN ÉPISODE */}
+        {/* PREMIER ÉPISODE */}
         <section className="bg-ciel-pale py-16">
           <div className="mx-auto max-w-6xl px-6">
-            <div className="flex flex-col gap-10 rounded-3xl bg-minuit p-10 md:flex-row md:items-end md:justify-between md:p-16">
-              <div>
-                <span className="eyebrow text-soleil">Premier épisode</span>
-                <div className="mt-3 font-mono text-sm text-ciel-doux">{next.date}</div>
-                {/* Logo blanc sur fond sombre — pas d'invert */}
-                <div className="mt-4 h-12 flex items-center">
-                  <img
-                    src={next.logo}
-                    alt={next.name}
-                    className="max-h-12 max-w-[200px] w-auto object-contain"
-                  />
+            <span className="eyebrow text-bleu-vif">
+              {next.videoUrl ? "Premier épisode — maintenant disponible" : "Premier épisode"}
+            </span>
+            <div className="mt-6 overflow-hidden rounded-3xl bg-minuit">
+              {next.videoUrl ? (
+                <div className="flex flex-col md:flex-row">
+                  {/* Thumbnail YouTube cliquable */}
+                  <a
+                    href={next.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative block aspect-video md:w-[58%]"
+                  >
+                    <img
+                      src={`https://img.youtube.com/vi/oUUOKrjHtv8/maxresdefault.jpg`}
+                      alt={`Épisode 01 — ${next.name}`}
+                      className="h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-minuit/30 transition-colors duration-300 group-hover:bg-minuit/10">
+                      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-soleil shadow-xl transition-transform duration-300 group-hover:scale-110">
+                        <svg viewBox="0 0 24 24" className="h-7 w-7 translate-x-0.5 fill-minuit">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                  {/* Infos épisode */}
+                  <div className="flex flex-col justify-center p-8 md:w-[42%] md:p-12">
+                    <div className="font-mono text-sm text-ciel-doux">{next.date}</div>
+                    <div className="mt-4 h-10 flex items-center">
+                      <img
+                        src={next.logo}
+                        alt={next.name}
+                        className="max-h-full max-w-[180px] w-auto object-contain"
+                      />
+                    </div>
+                    <h3 className="mt-3 font-serif text-4xl font-semibold text-white md:text-5xl">
+                      {next.name}
+                    </h3>
+                    <p className="mt-4 text-ciel-doux leading-relaxed">{next.description}</p>
+                    <a
+                      href={next.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-soleil px-6 py-3 text-sm font-semibold text-minuit hover:opacity-90 transition"
+                    >
+                      Regarder sur YouTube ↗
+                    </a>
+                  </div>
                 </div>
-                <h3 className="mt-3 font-serif text-5xl font-semibold text-white md:text-6xl">
-                  {next.name}
-                </h3>
-                <p className="mt-4 max-w-md text-ciel-doux">{next.description}</p>
-              </div>
-              <Link
-                to="/episodes"
-                className="inline-flex items-center gap-2 self-start rounded-full bg-soleil px-6 py-3 text-sm font-semibold text-minuit hover:opacity-90 transition md:self-end"
-              >
-                Calendrier complet
-                <span aria-hidden>→</span>
-              </Link>
+              ) : (
+                <div className="flex flex-col gap-10 p-10 md:flex-row md:items-end md:justify-between md:p-16">
+                  <div>
+                    <span className="eyebrow text-soleil">Premier épisode</span>
+                    <div className="mt-3 font-mono text-sm text-ciel-doux">{next.date}</div>
+                    <div className="mt-4 h-12 flex items-center">
+                      <img src={next.logo} alt={next.name} className="max-h-12 max-w-[200px] w-auto object-contain" />
+                    </div>
+                    <h3 className="mt-3 font-serif text-5xl font-semibold text-white md:text-6xl">{next.name}</h3>
+                    <p className="mt-4 max-w-md text-ciel-doux">{next.description}</p>
+                  </div>
+                  <Link
+                    to="/episodes"
+                    className="inline-flex items-center gap-2 self-start rounded-full bg-soleil px-6 py-3 text-sm font-semibold text-minuit hover:opacity-90 transition md:self-end"
+                  >
+                    Calendrier complet <span aria-hidden>→</span>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </section>

@@ -8,6 +8,7 @@ export type Episode = {
   logo: string;         // chemin depuis /public/images/logos/
   logoInvert?: boolean; // true si le logo est blanc → afficher en noir via CSS
   logoMaxW?: string;    // override largeur max (ex: "100px")
+  videoUrl?: string;    // URL YouTube si l'épisode est en ligne
 };
 
 export const episodes: Episode[] = [
@@ -19,7 +20,8 @@ export const episodes: Episode[] = [
     description: "Reverse Sound est une association genevoise qui réunit des ingénieurs du son passionnés par la scène musicale locale.",
     category: "Musique",
     logo: "/images/logos/reverse-sound.png",
-    logoInvert: true, // texte blanc → invert pour fond clair
+    logoInvert: true,
+    videoUrl: "https://youtu.be/oUUOKrjHtv8",
   },
   {
     number: 2,

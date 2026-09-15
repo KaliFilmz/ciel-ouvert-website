@@ -66,6 +66,16 @@ function EpisodesPage() {
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                       {ep.description}
                     </p>
+                    {ep.videoUrl && (
+                      <a
+                        href={ep.videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-soleil px-4 py-1.5 text-xs font-semibold text-minuit hover:opacity-90 transition"
+                      >
+                        Regarder sur YouTube ↗
+                      </a>
+                    )}
                   </div>
 
                   {/* ── Desktop layout ── */}
@@ -91,7 +101,18 @@ function EpisodesPage() {
                     <span className="justify-self-center rounded-full bg-ciel-pale px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-bleu-nuit">
                       {ep.category}
                     </span>
-                    <span className="text-sm font-medium text-bleu-vif">À venir →</span>
+                    {ep.videoUrl ? (
+                      <a
+                        href={ep.videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 rounded-full bg-soleil px-4 py-1.5 text-sm font-semibold text-minuit hover:opacity-90 transition"
+                      >
+                        Regarder ↗
+                      </a>
+                    ) : (
+                      <span className="text-sm font-medium text-muted-foreground">À venir →</span>
+                    )}
                   </div>
 
                 </article>
