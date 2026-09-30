@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const next = episodes[0];
+  const next = episodes[1];
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
@@ -97,7 +97,7 @@ function HomePage() {
         <section className="bg-ciel-pale py-16">
           <div className="mx-auto max-w-6xl px-6">
             <span className="eyebrow text-bleu-vif">
-              {next.videoUrl ? "Premier épisode — maintenant disponible" : "Premier épisode"}
+              {next.videoUrl ? "Deuxième épisode — maintenant disponible" : "Deuxième épisode"}
             </span>
             <div className="mt-6 overflow-hidden rounded-3xl bg-minuit">
               {next.videoUrl ? (
@@ -110,7 +110,7 @@ function HomePage() {
                     className="group relative block aspect-video md:w-[58%]"
                   >
                     <img
-                      src={`https://img.youtube.com/vi/oUUOKrjHtv8/maxresdefault.jpg`}
+                      src={`https://img.youtube.com/vi/${next.videoUrl!.match(/youtu\.be\/([^?]+)/)?.[1]}/maxresdefault.jpg`}
                       alt={`Épisode 01 — ${next.name}`}
                       className="h-full w-full object-cover"
                     />
