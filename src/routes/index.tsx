@@ -200,7 +200,19 @@ function HomePage() {
                 </div>
                 <h3 className="mt-4 font-serif text-xl text-primary">{ep.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{ep.description}</p>
-                <div className="mt-auto pt-4 font-mono text-xs text-bleu-vif">{ep.date}</div>
+                <div className="mt-auto pt-4 flex items-center justify-between">
+                  <span className="font-mono text-xs text-bleu-vif">{ep.date}</span>
+                  {ep.videoUrl && (
+                    <a
+                      href={ep.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 rounded-full bg-soleil px-3 py-1 text-xs font-semibold text-minuit hover:opacity-90 transition"
+                    >
+                      Regarder ↗
+                    </a>
+                  )}
+                </div>
               </article>
             ))}
           </div>

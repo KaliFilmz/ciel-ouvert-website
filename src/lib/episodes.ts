@@ -32,6 +32,7 @@ export const episodes: Episode[] = [
     category: "Citoyenneté",
     logo: "/images/logos/et-pk-pas.png",
     logoMaxW: "110px",
+    videoUrl: "https://youtu.be/IjuAzbVD5Do",
   },
   {
     number: 3,
