@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const next = episodes[1];
+  const next = episodes[2];
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
@@ -97,7 +97,7 @@ function HomePage() {
         <section className="bg-ciel-pale py-16">
           <div className="mx-auto max-w-6xl px-6">
             <span className="eyebrow text-bleu-vif">
-              {next.videoUrl ? "Deuxième épisode — maintenant disponible" : "Deuxième épisode"}
+              {next.videoUrl ? "Troisième épisode — maintenant disponible" : "Troisième épisode"}
             </span>
             <div className="mt-6 overflow-hidden rounded-3xl bg-minuit">
               {next.videoUrl ? (

@@ -42,6 +42,7 @@ export const episodes: Episode[] = [
     description: "YAFFA conçoit, coordonne et soutient des projets d'intervention psychosociale, culturelle et artistique en Palestine et en Suisse.",
     category: "Solidarité",
     logo: "/images/logos/yaffa.png",
+    videoUrl: "https://youtu.be/InUGvXn1k7s",
   },
   {
     number: 4,
