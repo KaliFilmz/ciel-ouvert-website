@@ -13,7 +13,7 @@ type ContactFormData = {
 };
 
 const sendContactEmail = createServerFn({ method: "POST" })
-  .inputValidator((input: unknown) => input as ContactFormData)
+  .validator((input: unknown) => input as ContactFormData)
   .handler(async ({ data }) => {
     const payload = data;
     const resend = new Resend(process.env.RESEND_API_KEY);
