@@ -52,6 +52,7 @@ export const episodes: Episode[] = [
     description: "Depuis 2018, ADEMAG accompagne les femmes migrantes confrontées aux violences à Genève.",
     category: "Social",
     logo: "/images/logos/ademag.png",
+    videoUrl: "https://youtu.be/lHJixlJirBU",
   },
   {
     number: 5,
